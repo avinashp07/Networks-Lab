@@ -1,0 +1,4 @@
+awk -f graphTCP.awk testRing.tr > thrptGraph1
+awk -f graphUDP.awk testRing.tr > thrptGraph2
+awk -f details.awk testRing.tr > detailFile
+gnuplot graphgen.sh
